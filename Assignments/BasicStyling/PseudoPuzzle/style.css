@@ -1,0 +1,7 @@
+p:hover{
+    background-color: deeppink;
+    cursor: pointer;
+}
+p::first-letter{
+    font-size:70px;
+}

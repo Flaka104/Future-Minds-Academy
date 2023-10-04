@@ -1,0 +1,25 @@
+body{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210814/pngtree-blue-purple-simple-gradient-background-image_760572.jpg');
+    background-repeat:repeat
+}
+.heading{
+    background-image: linear-gradient(to left, rgba(255,0,0,0.1), rgb(247, 86, 124));
+    color:#ffffff;
+
+}
+#navbar{
+    background-image: linear-gradient( rgba(255,0,0,0.2), rgb(153, 225, 217));
+    
+}
+.list a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.sectionone{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(247, 86, 124));
+    color:#ffffff
+}
+.sectiontwo{
+    background-image: linear-gradient( rgba(255,0,0,0.2), rgb(153, 225, 217));
+    color:#ffffff
+}

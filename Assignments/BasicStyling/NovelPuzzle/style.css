@@ -1,0 +1,33 @@
+.firstword{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    font-size: 40px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.firstletter{
+    color:black;
+    text-decoration: underline;
+    font-size:100px;
+}
+
+.wordtwo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.paragraf > p:first-child::first-letter{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    font-size:100px;
+    float:left;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+

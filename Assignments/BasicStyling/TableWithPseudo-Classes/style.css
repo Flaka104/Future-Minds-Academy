@@ -1,0 +1,23 @@
+#customers td, #customers th {
+    width:20%;
+    border: 1px solid #04AA6D;
+    text-align: center;
+    
+  }
+  #customers tr:nth-child(odd){
+    background-color: #006400;
+    color:#ffffff;
+    font-weight: bold;
+}
+  #customers tr:nth-child(even){
+      background-color: #228B22;
+      color:#ffffff;
+      font-weight: bold;
+}
+
+  #customers th {
+    font-weight: bold;
+    text-align: center;
+    background-color: #04AA6D;
+    color: black;
+  }
