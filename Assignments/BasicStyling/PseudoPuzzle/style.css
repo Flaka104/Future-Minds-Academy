@@ -2,6 +2,6 @@ p:hover{
     background-color: deeppink;
     cursor: pointer;
 }
-p::first-letter{
+p:hover::first-letter{
     font-size:70px;
 }
