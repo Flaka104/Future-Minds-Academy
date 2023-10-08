@@ -1,0 +1,19 @@
+.box-1 img{
+    width:300px;
+    float:left;
+    border:3px solid black;
+    margin:10px 10px 10px 0px;
+   
+}
+.box-1{
+    background-color: #FFE4E1;
+    border:3px solid black;
+    padding:15px;
+}
+.box-1 img:hover{
+    width:310px;
+    cursor: pointer;
+    border:3px dashed red;
+    padding:10px;
+
+}
