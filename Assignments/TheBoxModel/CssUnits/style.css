@@ -2,14 +2,19 @@ body{
     margin:0px;
     
 }
-.dark{
+section:nth-child(odd){
     width:100vw;
     height:25vh;
     background-color: #808080;
-    
-    
 }
-.dark h1{
+section:nth-child(even){
+    width:100vw;
+    height:25vh;
+    background-color: #DCDCDC;
+
+}
+    
+.dark{
     text-transform: capitalize;
     text-decoration:underline #ffffff ;
     color:#ffffff;
@@ -20,15 +25,7 @@ body{
     color:#ffffff;
     font-size:1em;
 }
-
 .light{
-    width:100vw;
-    height:25vh;
-    background-color: #DCDCDC;
-   
-    
-}
-.light h1{
     text-transform: capitalize;
     text-decoration:underline black ;
     color:black;
