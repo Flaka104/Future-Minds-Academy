@@ -1,0 +1,148 @@
+body {
+    background-image: url('https://www.designyourway.net/blog/wp-content/uploads/2018/09/photo-1516642898673-edd1ced.jpg');
+     background-size: cover;
+}
+
+.container {
+    margin: auto 10vw;
+}
+.title{
+    text-align: center;
+    font-size: 2.1em;
+}
+nav ul li{
+    display: inline;
+   
+}
+nav ul{
+    text-align: center;
+}
+.listone a{
+    background-color: #fb6f92;
+    color:#ffffff;
+    text-decoration: none;
+    border:2px solid white;
+    width:100px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+   
+}
+.listone a:hover{
+    background-color: #ff006e;
+    border:2px solid white;
+}
+
+.sectionone{
+    text-align: center;
+    background-color: #ffc8dd;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+}
+.sectionone:hover{
+    background-color: #ff006e;
+    border:3px solid white;
+
+}
+.sectionone h1{
+    font-size: 2em;
+    padding-top:10px;
+}
+.sectionone p{
+    text-align: left;
+    padding:10px;
+}
+
+.education{
+    background-color:#ff8fab;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+    
+}
+.education h1{
+    text-align: center;
+    font-size:2em;
+}
+.box-1{
+   border:2px solid white;
+   border-radius: 30px;
+   width:50vw;
+   background-color:#f7e1d7;
+   margin: 0px 10px 10px 20px;
+   width:75vw;
+
+}
+.education:hover{
+    background-color: #ffafcc;
+    border:3px solid white;
+}
+.titleedu{
+    list-style-type: none;
+    font-size: 1.2em;
+    color:grey;
+    font-weight: bold;
+    padding-left:30px;
+}
+.skills{
+    background-color:#ffafcc;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+}
+.skills h1{
+    text-align: center;
+    font-size: 2em;
+}
+table{
+    border-collapse: collapse;
+    margin:0px 0px 20px 20px;
+}
+table th{
+    background-color:#ffb5a7;
+}
+table td{
+    text-align: center;
+}
+.skills:hover{
+    background-color: #fb6f92;
+    border:3px solid white;
+}
+.projects{
+    background-color:#ffe5ec;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+}
+.projects h1{
+    text-align: center;
+    font-size: 2em;
+}
+.projects li{
+  padding-bottom: 10px;
+}
+.projects:hover{
+    background-color: #ffafcc;
+    border:3px solid white;
+}
+.direction{
+    border:2px solid white;
+    border-radius: 3px;
+    color:#ffffff;
+    text-align: center;
+    background-color: #f15bb5;
+    list-style-type: none;
+    position:relative;
+    top:-10px;
+}
+footer{
+    background-color:#fb6f92;
+    border:3px solid white;
+    margin-top:20px;
+}
+footer p{
+    text-align: center;
+    font-size:1.4em;
+    font-weight: bold;
+}
