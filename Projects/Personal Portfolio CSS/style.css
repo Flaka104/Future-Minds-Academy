@@ -1,12 +1,14 @@
 body {
     background-image: url('https://www.designyourway.net/blog/wp-content/uploads/2018/09/photo-1516642898673-edd1ced.jpg');
      background-size: cover;
+     cursor: url('images/butterflies.png'),auto;
+     margin:0px;
 }
-
+     
 .container {
     margin: auto 10vw;
 }
-.title{
+h1{
     text-align: center;
     font-size: 2.1em;
 }
@@ -16,6 +18,8 @@ nav ul li{
 }
 nav ul{
     text-align: center;
+    padding:0px;
+    margin-bottom: 30px;
 }
 .listone a{
     background-color: #fb6f92;
@@ -26,6 +30,8 @@ nav ul{
     border-radius: 10px;
     font-size: 1.2em;
     font-weight: bold;
+    padding:10px;
+    
    
 }
 .listone a:hover{
@@ -45,13 +51,10 @@ nav ul{
     border:3px solid white;
 
 }
-.sectionone h1{
-    font-size: 2em;
-    padding-top:10px;
-}
+
 .sectionone p{
     text-align: left;
-    padding:10px;
+    padding:20px;
 }
 
 .education{
@@ -61,16 +64,13 @@ nav ul{
     margin-top:20px;
     
 }
-.education h1{
-    text-align: center;
-    font-size:2em;
-}
+
 .box-1{
    border:2px solid white;
    border-radius: 30px;
    width:50vw;
    background-color:#f7e1d7;
-   margin: 0px 10px 10px 20px;
+   margin: 0px 10px 20px 20px;
    width:75vw;
 
 }
@@ -84,6 +84,7 @@ nav ul{
     color:grey;
     font-weight: bold;
     padding-left:30px;
+    padding-top:20px;
 }
 .skills{
     background-color:#ffafcc;
@@ -91,10 +92,7 @@ nav ul{
     border:3px solid white;
     margin-top:20px;
 }
-.skills h1{
-    text-align: center;
-    font-size: 2em;
-}
+
 table{
     border-collapse: collapse;
     margin:0px 0px 20px 20px;
@@ -115,10 +113,7 @@ table td{
     border:3px solid white;
     margin-top:20px;
 }
-.projects h1{
-    text-align: center;
-    font-size: 2em;
-}
+
 .projects li{
   padding-bottom: 10px;
 }
@@ -126,23 +121,164 @@ table td{
     background-color: #ffafcc;
     border:3px solid white;
 }
-.direction{
-    border:2px solid white;
+.direction {
+    border:2px solid #fb6f92;
     border-radius: 3px;
     color:#ffffff;
     text-align: center;
     background-color: #f15bb5;
-    list-style-type: none;
     position:relative;
     top:-10px;
+    
+}
+.projects li a{
+    text-decoration: none;
 }
 footer{
     background-color:#fb6f92;
     border:3px solid white;
     margin-top:20px;
+    padding:10px;
 }
 footer p{
     text-align: center;
     font-size:1.4em;
     font-weight: bold;
+}
+.projectone{
+    text-align: center;
+    background-color: #ffc8dd;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+    
+    
+}
+.projectone h1 a{
+    color:white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.projectone p{
+    font-size: 1.2em;
+    padding:10px;
+}
+.projectone:hover{
+    background-color: #ff006e;
+    border:3px solid white;
+    color:white;
+}
+.projectone img{
+    width:1000px;
+    padding:20px;
+}
+
+.projecttwo{
+    text-align: center;
+    background-color: #ff8fab;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+    
+    
+}
+.projecttwo h1 a{
+    color:white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.projecttwo p{
+    font-size: 1.2em;
+    padding:10px;
+}
+.projecttwo:hover{
+    background-color: #ffafcc;
+    border:3px solid white;
+    color:white;
+}
+.projecttwo img{
+    width:1000px;
+    padding:20px;
+}
+.projectthree{
+    text-align: center;
+    background-color: #ffe5ec;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+    
+    
+}
+.projectthree h1 a{
+    color:white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.projectthree p{
+    font-size: 1.2em;
+    padding:10px;
+}
+.projectthree:hover{
+    background-color: #ffafcc;
+    border:3px solid white;
+    color:white;
+}
+.projectthree img{
+    width:1000px;
+    padding:20px;
+}
+form{
+    text-align: center;
+    background-color: #ffe5ec;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+}
+form:hover{
+    background-color: #f15bb5;
+    border:2px solid #fb6f92;
+}
+input[type=email]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ff8fab;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ff8fab;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:white;
+    background-color:#ffafcc;
+    margin-bottom:30px;
+
+}
+button:hover{
+    background-color: #ff8fab;
+    border:2px solid white;
+}
+.socialicons{
+    text-align: center;
+    background-color: #ffe5ec;
+    border-radius: 30px;
+    border:3px solid white;
+    margin-top:20px;
+    padding: 30px 0px 30px 0px;
+}
+.socialicons:hover{
+    background-color: #ff006e;
+    border:2px solid white;
 }
