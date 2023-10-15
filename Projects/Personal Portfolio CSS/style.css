@@ -68,10 +68,9 @@ nav ul{
 .box-1{
    border:2px solid white;
    border-radius: 30px;
-   width:50vw;
    background-color:#f7e1d7;
-   margin: 0px 10px 20px 20px;
-   width:75vw;
+   margin: 0px 20px 20px 20px;
+   
 
 }
 .education:hover{
