@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding:0;
+}
+.search-bar{
+    width:18em;
+    padding:0.5em;
+    margin:1em;
+    border-radius:7em;
+    display:flex;
+    flex-direction: row;
+    box-shadow:inset 0px 0px 20px lightgrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(144,144 144);
+
+}
+.search-bar-input{
+    flex-grow:1;
+    border:none;
+    background-color: transparent;
+    outline:none;
+    font-size: 1.2em;
+    color:inherit;
+}
+.search-icon{
+    width:1.5em;
+}
+.search-bar-input::placeholder{
+    color:#b6b6b6;
+}
+.search-bar:has(.search-bar-input:focus){
+    outline:1px solid;
+}
+.search-bar-input:focus + img{
+    width:1.5rem;
+}
+.search-bar-input:focus + .search-icon{
+    width:1.5em;
+}
