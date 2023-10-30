@@ -2,15 +2,15 @@ body{
     margin:0;
     padding:0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     
 }
 aside{
-    width:300px;
+    /*width:300px;
     position:fixed;
     left:0;
     top:0;
-    bottom:0;
+    bottom:0;*/
     background-color:rgb(97, 97, 116);
     box-sizing: border-box;
     display: flex;
@@ -18,7 +18,7 @@ aside{
     justify-content: center;
     align-items: center;
     padding-left:10em;
-    line-height: 1;
+   
     
 }
 .title{
