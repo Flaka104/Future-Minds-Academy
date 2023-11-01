@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+img{
+    filter: blur(2px);
+    transition: filter .5s cubic-bezier(0.075, 0.82, 0.165, 1), rotate .5s,cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+    cursor:pointer;
+}
+img:hover{
+    filter: blur(0px);
+    rotate:720deg;
+}
