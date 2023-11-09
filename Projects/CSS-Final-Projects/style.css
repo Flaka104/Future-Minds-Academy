@@ -18,6 +18,7 @@ body{
    top:0;
    left:0;
   
+  
     
    
 }
@@ -177,6 +178,7 @@ body{
 .X{
     width: 15px;
     height:15px;
+    color:white;
     border-radius: 50%;
     background-color: red;
     text-align: center;
