@@ -3,6 +3,7 @@ body{
     padding:0;
     display:flex;
    /*height:100vh;*/
+   font-family: 'Roboto', sans-serif;
     
 }
 .sidebar{
@@ -195,14 +196,14 @@ body{
     position: absolute;
     left:-150px;
     background-color: #f1f1f1;
-    width: 500px;
+    /*width: 500px;*/
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
   }
   
   .dropdown-content a {
     color: black;
-    width:60%;
+    /*width:60%;*/
     padding:10px 10px;
     text-decoration: none;
     display: block;
