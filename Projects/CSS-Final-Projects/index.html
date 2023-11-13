@@ -66,13 +66,14 @@
         <div class="header">
             <div class="icon-more">
                 <span class="material-icons more-vert" title="see_more">more_vert</span><span class="title">Dashboard</span>
-                <span class="material-icons menu">menu</span>
+                
             </div>
+            <span class="material-icons menu">menu</span>
 
             <div class="icons-nav">
                 <div class="search-bar">
                     <input type="text" class="search-bar-input" placeholder="Search">
-                    <img src="images/search.svg" class="search-icon">
+                    <img src="images/search.svg" class="search-icon" title="search">
                 </div>
                 <span class="material-icons" title="dashboard">dashboard</span>
 
@@ -130,7 +131,7 @@
                             <th>600</th>
                             <th>7.87%</th>
                         </tr>
-                        <tr>
+                        <tr class="last">
                             <th><img src="images/brasil.svg" alt="flag" width="20px">Brasil</th>
                             <th>550</th>
                             <th>5.94%</th>
@@ -187,14 +188,17 @@
             <h1 class="titleofcards">Manage Listings</h1>
            <div class="cards">
               <div class="card">
-                <div class="card-img">
-                    <img src="images/card-1.jpeg" alt="card">
+                <div class="hover-image">
+                    <div class="card-img ">
+                        <img src="images/card-1.jpeg" class="card-one" alt="card">
+                    </div>
+                    <div class="card-icons">
+                        <a href="#" > <span class="material-icons tabs">tabs</span></a>
+                         <a href="#" ><span class="material-icons edit">edit</span></a>
+                        <a href="#" ><span class="material-icons close">close</span></a>
+                    </div>
                 </div>
-                <div class="card-icons">
-                    <span class="material-icons tabs">tabs</span>
-                    <span class="material-icons edit">edit</span>
-                    <span class="material-icons close">close</span>
-                </div>
+                
                 <div class="info">
                     <h1>Cozy 5 Stars Apartment</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis odio reiciendis eum ea maiores, ex ducimus, quaerat sit expedita tenetur  maiores, ex ducimus, quaerat sit expedita tenetu</p>
@@ -210,13 +214,15 @@
              </div>
 
            <div class="card">
+            <div class="hover-image">
             <div class="card-img">
-                <img src="images/card-2.jpeg" alt="card">
+                <img src="images/card-2.jpeg" class="card-one" alt="card">
             </div>
             <div class="card-icons">
-                <span class="material-icons tabs">tabs</span>
-                <span class="material-icons edit">edit</span>
-                <span class="material-icons close">close</span>
+               <a href="#" ><span class="material-icons tabs">tabs</span></a>
+               <a href="#" > <span class="material-icons edit">edit</span></a>
+                <a href="#" > <span class="material-icons close">close</span></a>
+            </div>
             </div>
             <div class="info">
                 <h1>Office Studio</h1>
@@ -232,13 +238,15 @@
        </div>
 
         <div class="card">
+            <div class="hover-image">
             <div class="card-img">
-                <img src="images/card-3.jpeg" alt="card">
+                <img src="images/card-3.jpeg" class="card-one" alt="card">
             </div>
             <div class="card-icons">
-                <span class="material-icons tabs">tabs</span>
-                <span class="material-icons edit">edit</span>
-                <span class="material-icons close">close</span>
+                <a href="#" ><span class="material-icons tabs">tabs</span></a>
+                <a href="#" > <span class="material-icons edit">edit</span></a>
+                <a href="#" > <span class="material-icons close">close</span></a>
+            </div>
             </div>
             <div class="info">
                 <h1>Beautiful Castel</h1>
@@ -266,7 +274,7 @@
             
           </nav>
           <div class="copy-right">
-            <p>&#169 John Doe</p>
+            <p>&#169 <em>John Doe,</em>2023</p>
           </div>
 
 </footer>
