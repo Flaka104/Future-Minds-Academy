@@ -9,13 +9,15 @@
     <script>
 
        let input=parseInt(prompt('Shkruaj nje numer'));
+       let parity;
        if(input % 2== 0){
-        console.log('Cift');
+      parity='Cift';
     
        } 
        else{
-        console.log('Tek');
+      parity='Tek';
        }
+       console.log(`Numri ${input} eshte nje numer ${parity}`);
     </script>
 </body>
 </html>
