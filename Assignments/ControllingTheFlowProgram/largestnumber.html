@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Largest Of three numbers</title>
+    <title>Largest Number</title>
 </head>
 <body>
     <script>
+    let a=prompt('Numri i pare');
+    let b=prompt('Numri i dyte');
+    let c=prompt('Numri i trete');
 
-    let x=prompt('Numri i pare');
-    let y=prompt('Numri i dyte');
-    let z=prompt('Numri i trete');
-    console.log(Math.max(x,y,z)+" is the greatest"); 
+    let max=a;
+    if(b>max){
+        max=b;
+    }
+    if (c>max){
+    max=c;
+    }
 
-    </script>
+
+    console.log(max);
+
+</script>
 </body>
 </html>
