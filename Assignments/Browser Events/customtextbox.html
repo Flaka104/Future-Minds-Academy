@@ -1,0 +1,95 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Textbox</title>
+    <style>
+        #textbox {
+          display: inline-block;
+          background-color: black;
+          color:white;
+          border: 1px solid black;
+          padding: 5px;
+          min-height: 100px;
+          width: 300px;
+          resize: none;
+          overflow: auto;
+        }
+     </style>
+</head>
+<body>
+    <div  id="textbox" contenteditable="true"></div>
+
+ <script>
+    let textbox = document.getElementById('textbox');
+
+    textbox.addEventListener('input', ()=> {
+       
+    });
+
+    textbox.addEventListener('keypress', (event)=> {
+      let character =event.key;
+      textbox.textContent +=character;
+    });
+ </script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color:white;
+      margin: 0;
+    }
+
+    #customTextbox {
+      width: 400px;
+      height: 70px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: black;
+      color:white;
+    }
+  </style>
+  <title>Custom Textbox</title>
+</head>
+<body>
+  <div id="customTextbox" contenteditable="true" ></div>
+
+  <script>
+    let customTextbox = document.getElementById("customTextbox");
+    let placeholder = "";
+
+   
+ customTextbox.textContent = placeholder;
+  
+    customTextbox.addEventListener("keypress", (event) => {
+     let isPlaceholder = customTextbox.textContent === placeholder; 
+    
+       if (isPlaceholder) {
+        customTextbox.textContent = "";
+      }
+    });
+
+   
+    customTextbox.addEventListener("keydown", (event) => {
+     if (event.key === "Backspace" && customTextbox.textContent === "") {
+          customTextbox.textContent = placeholder;
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+

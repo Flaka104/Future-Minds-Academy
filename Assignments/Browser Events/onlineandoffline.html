@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Offline Alert</title>
+ <style>
+    #offline-popup {
+     display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      
+}
+ </style>
+</head>
+<body>
+    
+ <div  id="offline-popup">You are offline, please wait until you are reconnected</div>
+
+
+ <script>
+    let offlinePopup = document.getElementById('offline-popup');
+
+    offlinePopup.addEventListener('offline', () => {
+      offlinePopup.style.display = 'block';
+    });
+
+    offlinePopup.addEventListener('online', () =>{
+      offlinePopup.style.display = 'none';
+    });
+  
+ </script>
+</body>
+</html>
+
+
+
