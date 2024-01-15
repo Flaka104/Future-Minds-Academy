@@ -26,11 +26,11 @@
  <script>
     let offlinePopup = document.getElementById('offline-popup');
 
-    offlinePopup.addEventListener('offline', () => {
+    window.addEventListener('offline', () => {
       offlinePopup.style.display = 'block';
     });
 
-    offlinePopup.addEventListener('online', () =>{
+    window.addEventListener('online', () =>{
       offlinePopup.style.display = 'none';
     });
   
