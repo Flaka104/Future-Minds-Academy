@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       margin: 0;
+    }
+
+    .item {
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px;
+      width: 300px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #8F334E;
+      border: 1px solid #8F334E;
+      color:white;
+      font-weight: bold;
+    }
+
+    .total {
+      font-weight: bold;
+      margin-top: 16px;
+      color:white;
+      background-color: #8F334E;
+      padding:10px;
+    }
+  </style>
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <script>
+    let cart = [
+      {
+        title: 'Milk',
+        category: 'Food',
+        quantity: 3,
+        price: 1.65
+      },
+      {
+        title: 'Bread',
+        category: 'Food',
+        quantity: 2,
+        price: 2.25
+      },
+      {
+        title: 'Smartphone',
+        category: 'Electronics',
+        quantity: 1,
+        price: 699.99
+      },
+      {
+        title: 'Running Shoes',
+        category: 'Fashion',
+        quantity: 1,
+        price: 49.99
+      },
+      {
+        title: 'Book: The Hitchhiker\'s Guide to the Galaxy',
+        category: 'Books',
+        quantity: 1,
+        price: 12.99
+      },
+      {
+        title: 'Coffee Maker',
+        category: 'Appliances',
+        quantity: 1,
+        price: 34.99
+      },
+      {
+        title: 'Gaming Laptop',
+        category: 'Electronics',
+        quantity: 1,
+        price: 1299.99
+      },
+      {
+        title: 'Sunglasses',
+        category: 'Fashion',
+        quantity: 2,
+        price: 19.99
+      }
+    ];
+
+   
+    let displayItems = () => {
+      let cartContainer = document.body;
+
+      
+      cart.forEach((item) => {
+        let itemContainer = document.createElement('div');
+        itemContainer.className = 'item';
+
+        let title = document.createElement('h3');
+        title.textContent = item.title;
+
+        let price = document.createElement('p');
+        let totalPrice = item.quantity * item.price;
+        price.textContent = `Price: $${totalPrice.toFixed(2)}`;
+
+        itemContainer.appendChild(title);
+        itemContainer.appendChild(price);
+        cartContainer.appendChild(itemContainer);
+      });
+
+      
+      let totalPrice = cart.reduce((sum, item) => sum + item.quantity * item.price, 0);
+
+    
+      let totalElement = document.createElement('p');
+      totalElement.className = 'total';
+      totalElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+      cartContainer.appendChild(totalElement);
+    };
+
+  
+    displayItems();
+  </script>
+</body>
+</html>

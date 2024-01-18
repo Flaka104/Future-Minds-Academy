@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Movies</title>
+    <style>
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+
+        .movie-card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: grey;
+            color:white;
+            border-radius: 5px;
+        }
+
+        .movie-card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .highest-rated {
+            background-color:#FFD133;
+            color: black;
+        }
+
+        .movie-card p {
+            margin: 0;
+        }
+        .movie-card span{
+            color:#FF5833;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="movie-cards"></div>
+
+    <script>
+        let movies = [
+            {
+                name: 'The Godfather',
+                releaseYear: 1972,
+                rating: 9.2,
+                mainActors: ['Marlon Brando', 'Al Pacino', 'James Caan']
+            },
+            {
+                name: 'The Shawshank Redemption',
+                releaseYear: 1994,
+                rating: 9.3,
+                mainActors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton']
+            },
+            {
+                name: 'Pulp Fiction',
+                releaseYear: 1994,
+                rating: 8.9,
+                mainActors: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson']
+            },
+            {
+                name: 'The Dark Knight',
+                releaseYear: 2008,
+                rating: 9.0,
+                mainActors: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart']
+            },
+            {
+                name: 'Forrest Gump',
+                releaseYear: 1994,
+                rating: 8.8,
+                mainActors: ['Tom Hanks', 'Robin Wright', 'Gary Sinise']
+            }
+        ];
+
+        movies.sort((a, b) => b.rating - a.rating);
+
+        let movieCardsElement = document.getElementById('movie-cards');
+
+        movies.forEach((movie, index) => {
+            let movieCard = document.createElement('div');
+            movieCard.classList.add('movie-card');
+
+            if (index === 0) {
+                movieCard.classList.add('highest-rated');
+            }
+
+            movieCard.innerHTML = `
+                <h3>${movie.name}</h3>
+                <p>Release Year: ${movie.releaseYear}</p>
+                <span>Rating: ${movie.rating}</span>
+                <p>Main Actors: ${movie.mainActors.join(', ')}</p>
+            `;
+
+            movieCardsElement.appendChild(movieCard);
+        });
+    </script>
+</body>
+</html>
