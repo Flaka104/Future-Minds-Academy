@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="notification.js"></script>>
 
 
 </head>
@@ -79,15 +80,18 @@
                 <span class="material-icons" title="dashboard">dashboard</span>
 
 
-                <div class="dropdown">
+            <div class="dropdown" id="notificationDropdown">
                     <span class="material-icons" title="notification">notifications</span><span class="X">5</span>
-                    <div class="dropdown-content">
-                        <a href="#">John Doe sent a message</a>
+                    <div class="dropdown-content" id="notifications">
+                   <!----  <a href="#">John Doe sent a message</a>
                         <a href="#">Someone viewed your profile</a>
                         <a href="#">John Doe sent a message</a>
                         <a href="#">Someone viewed your profile</a>
-                        <a href="#">Another notification 3</a>
-                    </div>
+                        <a href="#">Another notification 3</a>-->
+                     
+                    </div> 
+                  
+    
                 </div>
                 <span class="material-icons" title="profile">person</span>
             </div>
@@ -290,6 +294,7 @@
 
 
     </div>
+    <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>

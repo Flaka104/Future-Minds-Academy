@@ -281,9 +281,9 @@ body{
     font-size:1rem;
 }
 
-  .dropdown:hover .dropdown-content {
+  /*.dropdown:hover .dropdown-content {
       display: block;
-    }
+    }*/
     .menu {
         visibility: hidden;
     }
