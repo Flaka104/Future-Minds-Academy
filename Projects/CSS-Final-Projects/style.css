@@ -29,12 +29,14 @@ body{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-   /* width:350px;*/
+   /* width:350px; */
    height:100vh;
    position: fixed;
    top:0;
    left:0;
    overflow-y: scroll;
+   
+  
   
   
     
@@ -664,6 +666,42 @@ footer ul li a{
 
 
 
+.collapsed .hr-line {
+    width: 100%;
+}
+.hr-line {
+    width: 230px;
+}
+.collapsed {
+    width: 130px !important;
+    transition: 0.9s;
+   
+}
+
+.collapsed .titleimg1 {
+    justify-content: center;
+}
+
+.main-w {
+    margin-left: 120px !important;
+    
+}
+
+.collapsed span {
+    line-height: 65px;
+}
+
+.collapsed .titletwo {
+    display: none;
+}
+
+.collapsed .title {
+    display: none;
+}
+
+.collapsed .arrow {
+    display: none;
+}
 
 
 

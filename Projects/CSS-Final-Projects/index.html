@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <h1 class="titleone">CP COOL Page</h1>
-        <hr width="230px">
+    <div class="sidebar" id="sidebar">
+        <h1 class="titleone">CP <span class="arrow"> COOL Page</span></h1>
+        <hr class="hr-line">
 
 
         <div class="titleimg1">
@@ -28,33 +28,33 @@
                 <span class="titletwo">John Doe</span>
             </div>
             <div class="material">
-                <span class="material-icons">expand_more</span>
+                <span class="material-icons arrow">expand_more</span>
             </div>
 
         </div>
-        <hr width="230px">
+        <hr class="hr-line">
 
 
 
-        <ul>
+        <ul >
             <li><span class="material-icons">dashboard</span><span class="title active">Dashboard</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">dashboard</span><span class="title">Pages</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">apps</span><span class="title">Components</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">content_paste</span><span class="title">Forms</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">table_view</span><span class="title">Tables</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">location_on</span><span class="title">Maps</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">widgets</span><span class="title">Widgets</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">show_chart</span><span class="title">Charts</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">calendar_month</span><span class="title">Calendar</span><span
-                    class="material-icons">expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li>
         </ul>
 
 
@@ -63,9 +63,9 @@
 
     </div>
 
-    <div class="container">
+    <div class="container" id="main-container">
         <div class="header">
-            <div class="icon-more">
+            <div class="icon-more" onclick="toggleSidebar()">
                 <span class="material-icons more-vert" title="see_more">more_vert</span><span
                     class="title">Dashboard</span>
 
@@ -80,18 +80,18 @@
                 <span class="material-icons" title="dashboard">dashboard</span>
 
 
-            <div class="dropdown" id="notificationDropdown">
+                <div class="dropdown" id="notificationDropdown">
                     <span class="material-icons" title="notification">notifications</span><span class="X">5</span>
                     <div class="dropdown-content" id="notifications">
-                   <!----  <a href="#">John Doe sent a message</a>
+                        <!----  <a href="#">John Doe sent a message</a>
                         <a href="#">Someone viewed your profile</a>
                         <a href="#">John Doe sent a message</a>
                         <a href="#">Someone viewed your profile</a>
                         <a href="#">Another notification 3</a>-->
-                     
-                    </div> 
-                  
-    
+
+                    </div>
+
+
                 </div>
                 <span class="material-icons" title="profile">person</span>
             </div>
@@ -292,9 +292,13 @@
 
 
 
-
     </div>
-    <script src="./js/index.js" type="module"></script>
+
+
+    <script src="./js/sidebar.js"></script>
+    <script  src="./js/index.js" type="module"></script>
+
+
 </body>
 
 </html>

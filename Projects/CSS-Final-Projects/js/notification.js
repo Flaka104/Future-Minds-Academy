@@ -7,6 +7,7 @@ let defaultNotifications=[
     "John Doe wants to connect",
     "hello",
     "hello"
+    
 
     
 
@@ -29,6 +30,8 @@ notifications.forEach((notification)=> {
 
 //e ndreqim numrin  e notifications
 listElement.parentElement.setAttribute('data-notifications', notifications.length);
+
+
 
     
 
