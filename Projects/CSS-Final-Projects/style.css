@@ -703,6 +703,306 @@ footer ul li a{
     display: none;
 }
 
+/*   dropdown list             */
+
+/*.main-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dropdown-item {
+    display: block !important;
+}
+
+.dropdown-item.active {
+    display: block;
+    padding-left: 20px;
+}
+
+.sidebar ul .sub-menu {
+   display: none;
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.sidebar ul .sub-menu li {
+    line-height: 40px;
+    cursor: pointer;
+}
+.sidebar ul .dropdown-item.active .sub-menu {
+    display: block;
+}*/
+/*        test    */
+
+/* .sidebar ul .submenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.sidebar ul .submenu li {
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidebar ul .dropdown-item.active .submenu {
+    display: block;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button toggle    */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: purple;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.set-icon{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius:10px;
+    margin-right: -25px;
+    }
+    .settings-w{
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    padding: 10px 20px;
+    border-radius: 3px 0px 0px 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    .settings-w p{
+        font-size:1.2rem;
+        color:black;
+        font-weight:bold;
+    }
+    .setting{
+    box-shadow: 0px 0px 20px gray;
+    position: absolute;
+    top: -30px;
+    right: 70px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+}
+.colors-filters{
+   display: flex;
+   gap:10px;
+
+   list-style-type: none;
+  
+}
+
+.sidebar-background{
+    display: flex;
+   gap:10px;
+  
+   list-style-type: none;
+}
+.image-toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+.images-w{
+    display: flex;
+    gap:20px;
+}
+.colors-filters .circle-purple{ 
+    border-radius: 50%;
+    padding: 15px;
+     background-color:purple;
+     cursor: pointer;
+}
+.colors-filters .circle-blue{ 
+    border-radius: 50%;
+    padding: 15px;
+    background-color:blue;
+    cursor: pointer;
+}
+.colors-filters .circle-green{ 
+    border-radius: 50%;
+    padding: 15px;
+    background-color:green;
+    cursor: pointer;
+}
+.colors-filters .circle-orange{ 
+    border-radius: 50%;
+    padding: 15px;
+    background-color:orange;
+    cursor: pointer;
+}
+.colors-filters .circle-red{ 
+    border-radius: 50%;
+    padding: 15px;
+    background-color:red;
+    cursor: pointer;
+}
+hr{
+    width:100%;
+}
+.sidebar-background .white{
+    border-radius: 50%;
+    padding: 15px;
+    background-color:grey;
+    cursor: pointer;
+}
+.sidebar-background .black{
+    border-radius: 50%;
+    padding: 15px;
+    background-color:black;
+    cursor: pointer;
+}
+.image-toggle .toggle{
+    color: purple;
+    cursor: pointer;
+    
+}
+.images-w img{
+    width:50px;
+    height:100px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.setting {
+    display: none;
+}
+.setting.show-settings {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 768px) {
