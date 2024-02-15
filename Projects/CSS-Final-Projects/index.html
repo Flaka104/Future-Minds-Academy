@@ -36,27 +36,139 @@
 
 
 
-        <ul >
-            <li><span class="material-icons">dashboard</span><span class="title active">Dashboard</span><span
-                    class="material-icons arrow" >expand_more</span></li>
-
-                    <li><span class="material-icons">dashboard</span><span class="title active">Pages</span><span
-                        class="material-icons arrow" >expand_more</span></li>
-               
-           
-
-                 <!----  <li class="dropdown-item">
-                        <div class="main-menu">
+        <ul class="submenu">
+            <li>
+                <div class="test">
+                <span class="material-icons">dashboard</span>
+                <span class="title active">Dashboard</span>
+                <span class="material-icons arrow" >expand_more</span>
+                </div>
+                </li>
+                    
+                   
+                        <li class="expandable">
+                            <div class="test">
                             <span class="material-icons">dashboard</span>
                             <span class="title">Pages</span>
-                            <span class="material-icons arrow">expand_more</span>
-                        </div>
-                        <ul class="sub-menu">
-                            <li>Subitem 1</li>
-                            <li>Subitem 2</li>
-                        </ul>
-                    </li>-->
+                            <span class="material-icons arrow" >expand_more</span>
+                       </div>
+                            <ul class="list">
+                                <li class="list-item "><span>P</span>Pricing</li>
+                                <li class="list-item"><span>RL</span>RTL Support</li>
+                                <li class="list-item"><span>T</span>Timeline</li>
+                                <li class="list-item"><span>L</span>Login Page</li>
+                            </ul>
+                        </li>
+
+                        <li class="expandable">
+                            <div class="test">
+                                <span class="material-icons">apps</span>
+                                <span class="title">Components</span>
+                                <span class="material-icons arrow" >expand_more</span>
+                                
+                       </div>
+                            <ul class="list">
+                                <li class="list-item "><span>B</span>Buttons</li>
+                                <li class="list-item"><span>GS</span>Grid System</li>
+                                <li class="list-item"><span>P</span>Panels</li>
+                               
+                            </ul>
+                        </li>
+
+                        <li class="expandable">
+                            <div class="test">
+                                <span class="material-icons">content_paste</span>
+                                <span class="title">Forms</span>
+                                <span class="material-icons arrow" >expand_more</span>
+                             </div>
+                            <ul class="list">
+                                <li class="list-item"><span>RF</span>Regular Forms</li>
+                                <li class="list-item"><span>EF</span>Extended Forms</li>
+                                    </ul>
+                        </li>
+
+                        <li class="expandable">
+                            <div class="test">
+                                <span class="material-icons">table_view</span>
+                                <span class="title">Tables</span>
+                                <span class="material-icons arrow" >expand_more</span>
+                               
+                             </div>
+                            <ul class="list">
+                                <li class="list-item"><span>RF</span>Regular Forms</li>
+                                <li class="list-item"><span>EF</span>Extended Forms</li>
+                                    </ul>
+                        </li>
+
+                        <li class="expandable">
+                            <div class="test">
+                                <span class="material-icons">location_on</span>
+                                <span class="title">Maps</span>
+                                <span class="material-icons arrow" >expand_more</span>
                     
+                             </div>
+                            <ul class="list">
+                                <li class="list-item"><span>RF</span>Regular Forms</li>
+                                <li class="list-item"><span>EF</span>Extended Forms</li>
+                                    </ul>
+                        </li>
+
+                        <li class="expandable">
+                            <div class="test">
+                                <span class="material-icons">widgets</span>
+                                <span class="title">Widgets</span>
+                                <span class="material-icons arrow" >expand_more</span>
+                               
+                             </div>
+                            <ul class="list">
+                                <li class="list-item"><span>RF</span>Regular Forms</li>
+                                <li class="list-item"><span>EF</span>Extended Forms</li>
+                                    </ul>
+                        </li>
+
+                        <li class="expandable">
+                            <div class="test">
+                                <span class="material-icons">show_chart</span>
+                                <span class="title">Charts</span>
+                                <span class="material-icons arrow" >expand_more</span>
+                    
+                             </div>
+                            <ul class="list">
+                                <li class="list-item"><span>RF</span>Regular Forms</li>
+                                <li class="list-item"><span>EF</span>Extended Forms</li>
+                                    </ul>
+                        </li>
+
+                        <li class="expandable">
+                            <div class="test">
+                                <span class="material-icons">calendar_month</span>
+                                <span class="title">Calendar</span>
+                                <span class="material-icons arrow" >expand_more</span>
+                    
+                    
+                             </div>
+                            <ul class="list">
+                                <li class="list-item"><span>RF</span>Regular Forms</li>
+                                <li class="list-item"><span>EF</span>Extended Forms</li>
+                                    </ul>
+                        </li>
+                               
+                        
+
+                     
+
+                    
+                    
+                        <script>
+                            // Add click event listener to expandable items
+                            document.querySelectorAll('.expandable').forEach(item => {
+                                item.addEventListener('click', () => {
+                                    item.classList.toggle('expanded');
+                                });
+                            });
+                        </script>
+                
+           
 
 
 
@@ -66,21 +178,21 @@
 
 
 
-
+<!-- 
             <li><span class="material-icons">apps</span><span class="title">Components</span><span
-                    class="material-icons arrow" >expand_more</span></li>
-            <li><span class="material-icons">content_paste</span><span class="title">Forms</span><span
-                    class="material-icons arrow" >expand_more</span></li>
-            <li><span class="material-icons">table_view</span><span class="title">Tables</span><span
-                    class="material-icons arrow" >expand_more</span></li>
-            <li><span class="material-icons">location_on</span><span class="title">Maps</span><span
+                    class="material-icons arrow" >expand_more</span></li> -->
+            <!-- <li><span class="material-icons">content_paste</span><span class="title">Forms</span><span
+                    class="material-icons arrow" >expand_more</span></li> -->
+            <!-- <li><span class="material-icons">table_view</span><span class="title">Tables</span><span
+                    class="material-icons arrow" >expand_more</span></li> -->
+            <!-- <li><span class="material-icons">location_on</span><span class="title">Maps</span><span
                     class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">widgets</span><span class="title">Widgets</span><span
                     class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">show_chart</span><span class="title">Charts</span><span
                     class="material-icons arrow" >expand_more</span></li>
             <li><span class="material-icons">calendar_month</span><span class="title">Calendar</span><span
-                    class="material-icons arrow" >expand_more</span></li>
+                    class="material-icons arrow" >expand_more</span></li> -->
         </ul>
 
 
@@ -217,16 +329,17 @@
         </div>
 
         <h1 class="titleofcards">Manage Listings</h1>
-        <div class="cards">
+      
+        <div class="cards" >
             <div class="card">
-                <div class="hover-image">
+           <div class="hover-image">
                     <div class="card-img ">
                         <img src="images/card-1.jpeg" class="card-one" alt="card">
                     </div>
                     <div class="card-icons">
                         <a href="#"> <span class="material-icons tabs">tabs</span></a>
-                        <a href="#"><span class="material-icons edit">edit</span></a>
-                        <a href="#"><span class="material-icons close">close</span></a>
+                        <a href="#" ><span class="material-icons edit">edit</span></a>
+                        <a href="#" ><span class="material-icons close">close</span></a>
                     </div>
                 </div>
 
@@ -236,10 +349,11 @@
                         maiores, ex ducimus, quaerat sit expedita tenetur maiores, ex ducimus, quaerat sit expedita
                         tenetu</p>
                 </div>
+               
                 <hr>
+              
 
                 <div class="card-info">
-
                     <p class="price">$899/night</p>
                     <p class="warning"><span class="material-icons">location_on</span>Barcelona,Spain</p>
                 </div>
@@ -300,6 +414,7 @@
 
         </div>
         <hr>
+      
         <footer>
             <nav>
                 <ul>

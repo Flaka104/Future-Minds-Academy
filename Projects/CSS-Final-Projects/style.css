@@ -96,7 +96,7 @@ body{
     font-weight: 300;
     font-size:var(--font-of-text);
 }
-.sidebar ul li{
+.sidebar ul li .test{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -109,18 +109,19 @@ body{
     cursor: pointer;
     
 }
- .sidebar li:hover{
+ /* .sidebar li:hover{
     background-color:grey;
 }
 
 .sidebar li:nth-child(1){
     background-color:var(--color-background);
-}
+} */
 .sidebar ul .title{
     -webkit-box-flex:0.4;
         -ms-flex-positive:0.4;
             flex-grow:0.4;
     margin-right:-5px;
+    
 }
 /*pjesa e ndrshimit te headerit*/
 .search-icon{
@@ -702,61 +703,73 @@ footer ul li a{
 .collapsed .arrow {
     display: none;
 }
-
-/*   dropdown list             */
-
-/*.main-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.dropdown-item {
-    display: block !important;
-}
-
-.dropdown-item.active {
-    display: block;
-    padding-left: 20px;
-}
-
-.sidebar ul .sub-menu {
-   display: none;
-    list-style-type: none;
-    padding-left: 20px;
-    margin: 0;
-}
-
-.sidebar ul .sub-menu li {
-    line-height: 40px;
-    cursor: pointer;
-}
-.sidebar ul .dropdown-item.active .sub-menu {
-    display: block;
-}*/
-/*        test    */
-
-/* .sidebar ul .submenu {
+.collapsed .list-item{
     display: none;
+}
+
+/*        dropdwon list    */
+ .submenu {
     list-style-type: none;
     padding-left: 20px;
     margin: 0;
 }
 
-.sidebar ul .submenu li {
-    line-height: 40px;
+ .submenu li {
+    line-height: 65px;
     cursor: pointer;
-    width: 100%;
 }
 
-.sidebar ul .dropdown-item.active .submenu {
+ .submenu li .arrow {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+ .submenu li.expanded .arrow {
+    transform: rotate(180deg);
+}
+
+ .submenu li ul {
+    display: none;
+}
+
+ .submenu li.expanded ul {
     display: block;
-} */
+}
+.expanded {
+    display: flex;
+    flex-direction: column;
+}
+.list-item{
+    display: flex;
+    justify-content: space-evenly;
+}
+ /* .sidebar li:hover{
+    background-color:grey;
+}
 
+.sidebar li:nth-child(1){
+    background-color:var(--color-background);
+}
 
+ .list li:hover{
+    background-color: none;
+}  */
+.test:hover{
+    background-color: grey;
+}
+.sidebar li:nth-child(1){
+    background-color:var(--color-background);
+}
 
-
-
+.list .list-item:hover{
+    background-color: grey;
+}
+.expandable .list-item:nth-child(1)
+.expandable .list-item:nth-child(1),
+.expandable .list-item:nth-child(1) {
+    background-color:grey;
+    
+}
 
 
 
@@ -983,7 +996,7 @@ hr{
     display: flex;
 }
 
-
+/* listings   */
 
 
 
