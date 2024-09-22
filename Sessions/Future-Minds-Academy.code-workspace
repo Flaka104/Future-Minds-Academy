@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/around-project (2)/around-project"
+		},
+		{
+			"path": "../../../Downloads/simple-app"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "around-project"
+	}
+}
